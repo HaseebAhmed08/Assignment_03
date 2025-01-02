@@ -29,7 +29,7 @@ void main() {
   var studentrollnumber = int.parse(stdin.readLineSync()!);
   int totalSubjestMarks = 300;
 
-  num percentage = (math + english + urdu * totalSubjestMarks) / 100;
+  num percentage = ((math + english + urdu) / totalSubjestMarks) * 100;
 
   achihedmarks.addAll([math, english, urdu]);
   List<Map<String, dynamic>> studentDetails = [
